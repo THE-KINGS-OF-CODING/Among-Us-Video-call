@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Among Us | Web Based video chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <script type="text/javascript" src="https://flashphoner.com/downloads/builds/flashphoner_client/wcs_api-2.0/current/flashphoner.js"></script>
+    <script type="text/javascript" src="screen-sharing-min.js"></script>
+  </head>
+  <body onload="init_api()">
+    <div class="bg"></div>
+    <h1>Among Us | Web Based video chat</h1>
+    <video id="localVideo" autoplay muted  ></video>
+    <video id="remoteVideo" autoplay ></video>
+    <br>
+    <button id = 'startButton'>Turn on Video and Microphone</button>
+    <button id = 'hangupButton'>Turn off Video and Microphone</button>
+    <button id = 'connectButton'>Connect with the other side</button>
+    <button id = 'sendButton'>Send Messages to the other side</button>
+    <br>
+    <br>
+    <hr>
+    <h3>New User? Well, please read our <a href="www.google.com/">user manual</a> before using this app</h3>
+    <br>
+    <hr>
+    <h3>Username: User1</h3>
+    <h4>Sent Messages</h4>
+    <textarea id="inbox" placeholder="Enter some text, then press Send."></textarea>
+    <h4>Received Messages</h4>
+    <textarea id="receive" disabled></textarea>
+    <div class="fp-Video">
+            <div id="screen-sharing" class="display"></div>
+    </div>
+    <button id="shareBtn">Share Screen</button>
+    <script src="script.js"></script>
+  </body>
+</html>
